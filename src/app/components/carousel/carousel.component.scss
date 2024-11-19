@@ -1,0 +1,27 @@
+#carousel {
+
+  #image-container {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    img {
+      height: 60vh;
+      margin: 0.5rem;
+    }
+  }
+
+  #action-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      width: 6rem;
+      height: 2rem;
+    }
+
+    span {
+      color: white;
+    }
+  }
+}

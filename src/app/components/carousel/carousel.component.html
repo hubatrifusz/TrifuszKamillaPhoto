@@ -1,0 +1,16 @@
+<div id="carousel">
+  <div id="image-container">
+    <img src="images/image1.jpg" alt="" />
+    <img src="images/image2.jpg" alt="" />
+    <img src="images/image3.jpg" alt="" />
+    <img src="images/image4.jpg" alt="" />
+    <img src="images/image5.jpg" alt="" />
+    <img src="images/image6.jpg" alt="" />
+    <img src="images/image7.jpg" alt="" />
+  </div>
+  <div id="action-container">
+    <button (click)="scrollLeft()">left</button>
+    <span>{{ currentImageIndex - 3}}</span>
+    <button (click)="scrollRight()">right</button>
+  </div>
+</div>
