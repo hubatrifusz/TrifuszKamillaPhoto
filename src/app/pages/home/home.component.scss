@@ -2,4 +2,28 @@
 
 #home-page {
   background-color: $main-color;
+  color: $text-color;
+
+  #hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      margin: 2rem;
+
+      font-family: Playfair Display;
+      font-size: 3em;
+      font-style: italic;
+      text-transform: capitalize;
+      letter-spacing: 2pt;
+    }
+
+    p {
+      font-family: Nunito;
+      font-size: 1.5em;
+      color: $text-color-shade-1;
+      margin: 2rem;
+    }
+  }
 }
