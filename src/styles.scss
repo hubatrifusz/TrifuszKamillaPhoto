@@ -1,5 +1,32 @@
+@import "./assets/styles/variables";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: $text-color;
+}
+
+.title {
+  font-family: Playfair Display;
+  font-size: 3em;
+  font-style: italic;
+  text-transform: capitalize;
+  letter-spacing: 2pt;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+span {
+  font-family: Nunito;
+}
+
+p {
+  font-family: Nunito;
 }
