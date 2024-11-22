@@ -10,7 +10,12 @@ import { Component, Input } from '@angular/core';
 export class ServiceInfoCardComponent {
   @Input() title: string = 'placeholder';
 
-  appendServiceCard() {
-    throw new Error('Method not implemented.');
+  appendServiceCard(event: MouseEvent) {
+    const header = event.target as HTMLElement;
+    const card = header.parentElement;
+    const arrow = header!.children[1];
+
+    card!.classList.toggle('show');
+    arrow!.classList.toggle('flip');
   }
 }

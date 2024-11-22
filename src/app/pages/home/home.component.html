@@ -2,10 +2,10 @@
   <section id="hero">
     <h1>Trifusz Kamilla Photo</h1>
     <div id="images-container">
-      <img src="images/pictures/_DSC0062-Edit-2_sm.jpg" alt="" />
-      <img src="images/pictures/_DSC0501_sm.jpg" alt="" />
-      <img src="images/pictures/_DSC0244-_sm.jpg" alt="" />
-      <img src="images/pictures/_DSC0807-Edit_ps_2.jpg" alt="" />
+      <img src="images/pictures/dogs/dog5.jpg" alt="" />
+      <img src="images/pictures/cats/cat2.jpg" alt="" />
+      <img src="images/pictures/horses/horse24.jpg" alt="" />
+      <img src="images/pictures/dogs/dog36.jpg" alt="" />
     </div>
   </section>
   <section id="carousel">
@@ -19,10 +19,8 @@
 
   <section id="services">
     <h2 class="title">Szolgáltatások</h2>
-    <app-service-info-card></app-service-info-card>
-    <app-service-info-card></app-service-info-card>
-    <app-service-info-card></app-service-info-card>
-    <app-service-info-card></app-service-info-card>
-    <app-service-info-card></app-service-info-card>
+    @for (service of services; track $index) {
+      <app-service-info-card [title]="service.title"></app-service-info-card>
+    }
   </section>
 </div>
