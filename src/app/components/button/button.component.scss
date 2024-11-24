@@ -1,0 +1,32 @@
+@import "../../../assets/styles/variables";
+
+button {
+  width: 10rem;
+  aspect-ratio: 3/1;
+
+  border: none;
+  border-radius: $border-radius;
+
+  background-color: $button-background-color;
+  box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, 0.5);
+
+  cursor: pointer;
+
+  transition: all 0.4s ease;
+
+  span {
+    color: $text-color;
+    font-family: "Nunito";
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+button:hover {
+  background: $text-color;
+
+  span {
+    color: $button-background-color;
+  }
+}

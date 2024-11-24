@@ -20,7 +20,7 @@
   <section id="services">
     <h2 class="title">Szolgáltatások</h2>
     @for (service of services; track $index) {
-      <app-service-info-card [title]="service.title"></app-service-info-card>
+      <app-service-info-card [title]="service.title" [description]="service.description" [imageURLs]="service.imageURLs"></app-service-info-card>
     }
   </section>
 </div>

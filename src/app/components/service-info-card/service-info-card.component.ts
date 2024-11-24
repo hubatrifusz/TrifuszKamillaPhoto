@@ -1,14 +1,17 @@
 import { Component, Input } from '@angular/core';
+import { ButtonComponent } from "../button/button.component";
 
 @Component({
   selector: 'app-service-info-card',
   standalone: true,
-  imports: [],
+  imports: [ButtonComponent],
   templateUrl: './service-info-card.component.html',
   styleUrl: './service-info-card.component.scss',
 })
 export class ServiceInfoCardComponent {
   @Input() title: string = 'placeholder';
+  @Input() description: string = 'placeholder';
+  @Input() imageURLs!: string[];
 
   appendServiceCard(event: MouseEvent) {
     const header = event.target as HTMLElement;

@@ -4,6 +4,14 @@
     <div class="arrow"></div>
   </div>
   <div id="service-body">
-    <div id="description"></div>
+    <div id="description">
+      <p>{{ description }}</p>
+      <app-button></app-button>
+    </div>
+    <div id="images">
+      @for (img of imageURLs; track $index) {
+      <img src="{{ img }}" alt="" />
+      }
+    </div>
   </div>
 </div>
