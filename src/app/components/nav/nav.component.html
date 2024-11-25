@@ -1,0 +1,20 @@
+<div class="navbar hide">
+  <a id="logo" href="/">trifusz kamilla photo</a>
+  <div class="navbarItem">
+    <a href="/about">Rólam</a>
+    <a href="/portfolio">Portfólió</a>
+    <button>Foglalás</button>
+  </div>
+  <div class="navIcon" (click)="openNavigation()">
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav [class.visible]="showNavbar">
+  <ul>
+    <li><a href="/">főoldal</a></li>
+    <li><a href="/about">rólam</a></li>
+    <li><a href="/portfolio">portfólió</a></li>
+  </ul>
+</nav>

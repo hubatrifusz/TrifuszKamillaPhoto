@@ -5,7 +5,7 @@ import { CarouselComponent } from "../carousel/carousel.component";
 @Component({
   selector: 'app-service-info-card',
   standalone: true,
-  imports: [ButtonComponent, CarouselComponent],
+  imports: [ButtonComponent],
   templateUrl: './service-info-card.component.html',
   styleUrl: './service-info-card.component.scss',
 })
