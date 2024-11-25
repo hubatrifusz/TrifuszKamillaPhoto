@@ -76,20 +76,22 @@
         font-size: large;
       }
     }
-
-    #images {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-
+    #service-image-container {
       overflow: hidden;
 
-      height: 60vh;
+      #images {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
-      img {
-        height: 90%;
-        margin: 0.25rem;
-        border-radius: $border-radius;
+        height: 60vh;
+
+        img {
+          height: 90%;
+          margin: 0.25rem;
+          border-radius: $border-radius;
+          flex-shrink: 0;
+        }
       }
     }
   }
@@ -109,11 +111,13 @@
         width: 100%;
       }
 
-      #images {
-        img {
-          max-height: 20rem;
-          max-width: 100%;
-          object-fit: cover;
+      #image-container {
+        #images {
+          img {
+            max-height: 20rem;
+            max-width: 100%;
+            object-fit: cover;
+          }
         }
       }
     }

@@ -1,5 +1,4 @@
 #carousel {
-
   #image-container {
     display: flex;
     overflow: hidden;
@@ -10,19 +9,30 @@
       border-radius: 5px;
     }
   }
-
   #action-container {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    button {
-      width: 6rem;
-      height: 2rem;
+    .arrow {
+      width: 3vw;
+      margin: 0 5vw 0 5vw;
+      filter: brightness(0) invert(0.7);
+      cursor: pointer;
+    }
+
+    #left {
+      transform: rotateZ(90deg);
+    }
+
+    #right {
+      transform: rotateZ(-90deg);
     }
 
     span {
-      color: white;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: large;
     }
   }
 }

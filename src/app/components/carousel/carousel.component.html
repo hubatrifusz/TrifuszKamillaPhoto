@@ -7,8 +7,20 @@
     <img src="images/pictures/dogs/dog23.jpg" alt="" />
   </div>
   <div id="action-container">
-    <button (click)="scrollLeft()">left</button>
-    <span>{{ currentImageIndex - 3 }}</span>
-    <button (click)="scrollRight()">right</button>
+    <img
+      (click)="scrollLeft()"
+      class="arrow"
+      id="left"
+      src="icons/arrow.png"
+      alt=""
+    />
+    <span>0{{ currentImageIndex - 3}} / 05</span>
+    <img
+      (click)="scrollRight()"
+      class="arrow"
+      id="right"
+      src="icons/arrow.png"
+      alt=""
+    />
   </div>
 </div>

@@ -8,10 +8,12 @@
       <p>{{ description }}</p>
       <app-button></app-button>
     </div>
-    <div id="images">
-      @for (img of imageURLs; track $index) {
-      <img src="{{ img }}" alt="" />
-      }
+    <div id="service-image-container">
+      <div id="images">
+        @for (img of imageURLs; track $index) {
+        <img src="{{ img }}" alt="" loading="lazy" />
+        }
+      </div>
     </div>
   </div>
 </div>

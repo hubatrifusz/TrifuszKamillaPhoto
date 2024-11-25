@@ -94,7 +94,7 @@ export class CarouselComponent {
   }
 
   @HostListener('window:load')
-  addImagesToEnds() {
+  renderCarousel() {
     const carousel: HTMLElement | null =
       document.querySelector('#image-container');
 
@@ -121,5 +121,9 @@ export class CarouselComponent {
       window.innerWidth / 2 +
       currentImage.clientWidth / 2;
     carousel!.style.scrollBehavior = 'smooth';
+
+    setInterval(() => {
+      this.scrollRight();
+    }, 4000);
   }
 }

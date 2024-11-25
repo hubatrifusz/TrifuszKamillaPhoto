@@ -4,11 +4,15 @@ export const serviceData: ServiceModel[] = [
   {
     title: 'kutyásoknak',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, id repudiandae molestiae ipsum aliquam exercitationem laudantium laboriosam! Voluptates fugiat perferendis beatae consequuntur, sunt atque nostrum! Itaque quisquam nihil atque eius.',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, id repudiandae molestiae ipsum aliquam exercitationem laudantium laboriosam!',
     imageURLs: [
       'images/pictures/dogs/dog1.jpg',
       'images/pictures/dogs/dog2.jpg',
       'images/pictures/dogs/dog3.jpg',
+      'images/pictures/dogs/dog4.jpg',
+      'images/pictures/dogs/dog5.jpg',
+      'images/pictures/dogs/dog6.jpg',
+      'images/pictures/dogs/dog7.jpg',
     ],
   },
   {

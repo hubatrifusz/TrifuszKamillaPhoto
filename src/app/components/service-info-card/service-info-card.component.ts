@@ -1,10 +1,11 @@
-import { Component, Input } from '@angular/core';
-import { ButtonComponent } from "../button/button.component";
+import { Component, HostListener, Input } from '@angular/core';
+import { ButtonComponent } from '../button/button.component';
+import { CarouselComponent } from "../carousel/carousel.component";
 
 @Component({
   selector: 'app-service-info-card',
   standalone: true,
-  imports: [ButtonComponent],
+  imports: [ButtonComponent, CarouselComponent],
   templateUrl: './service-info-card.component.html',
   styleUrl: './service-info-card.component.scss',
 })
